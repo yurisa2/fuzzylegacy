@@ -6,10 +6,10 @@ cmake_minimum_required(VERSION 2.8)
 #After building:
 # In Linux:
 # In Mac:
-# otool -L fuzzylite #gives the dependencies of fuzzylite
-# install_name_tool -change /Users/jcrada/Development/fuzzylite/bin/libfuzzylite.dylib @executable_path/libfuzzylite.dylib fuzzylite
+# otool -L fuzzylegacy #gives the dependencies of fuzzylegacy
+# install_name_tool -change /Users/jcrada/Development/fuzzylegacy/bin/libfuzzylegacy.dylib @executable_path/libfuzzylegacy.dylib fuzzylegacy
 
-project(fuzzylite CXX)
+project(fuzzylegacy CXX)
 
 set(CMAKE_VERBOSE_MAKEFILE true)
 
@@ -60,7 +60,7 @@ set(LIBRARY_OUTPUT_PATH bin)
 set(FL_LIBS)
 
 if(UNIX)
-    set(CMAKE_CXX_FLAGS "-Werror -Wall -Wextra")
+    set(CMAKE_CXX_FLAGS "-Werror -Wall -Wextra -std=gnu++98")
     set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
 if(NOT APPLE)
@@ -96,16 +96,16 @@ message("${exepath}")
 set(CMAKE_DEBUG_POSTFIX -dbg)
 
 add_library(fl-shared SHARED ${fl-headers} ${fl-sources})
-set_target_properties(fl-shared PROPERTIES OUTPUT_NAME fuzzylite)
+set_target_properties(fl-shared PROPERTIES OUTPUT_NAME fuzzylegacy)
 target_link_libraries(fl-shared ${FL_LIBS})
 
 add_library(fl-static STATIC ${fl-headers} ${fl-sources})
-set_target_properties(fl-static PROPERTIES OUTPUT_NAME fuzzylite-static)
+set_target_properties(fl-static PROPERTIES OUTPUT_NAME fuzzylegacy-static)
 target_link_libraries(fl-static ${FL_LIBS})
 
 add_executable(fl-bin fl/Console.h src/Console.cpp src/main.cpp)
-set_target_properties(fl-bin PROPERTIES OUTPUT_NAME fuzzylite)
-set_target_properties(fl-bin PROPERTIES OUTPUT_NAME fuzzylite IMPORT_PREFIX _) #To prevent LNK1149 in Windows
+set_target_properties(fl-bin PROPERTIES OUTPUT_NAME fuzzylegacy)
+set_target_properties(fl-bin PROPERTIES OUTPUT_NAME fuzzylegacy IMPORT_PREFIX _) #To prevent LNK1149 in Windows
 set_target_properties(fl-bin PROPERTIES DEBUG_POSTFIX -dbg)
 target_link_libraries(fl-bin fl-shared ${FL_LIBS})
 
@@ -122,12 +122,12 @@ install(DIRECTORY fl/ DESTINATION include/fl)
 #	set(fl-suffix)
 #	add_custom_command(TARGET fl-bin POST_BUILD 
 #		COMMAND ${CMAKE_COMMAND} -E copy_if_different 
-#        "${CMAKE_SOURCE_DIR}/lib/fuzzylite${FL_CONF}.dll"
+#        "${CMAKE_SOURCE_DIR}/lib/fuzzylegacy${FL_CONF}.dll"
 #        ${CMAKE_SOURCE_DIR}/bin)                 # <--this is out-file path
 #endif()
 
 message("=====================================")
-message("fuzzylite v.${FL_VERSION}b${FL_DATE}\n")
+message("fuzzylegacy v.${FL_VERSION}b${FL_DATE}\n")
 message("FL_DEBUG=${FL_DEBUG}")
 message("FL_USE_FLOAT=${FL_USE_FLOAT}")
 message("FL_BACKTRACE=${FL_BACKTRACE}")

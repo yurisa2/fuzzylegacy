@@ -1,14 +1,14 @@
-import com.fuzzylite.*;
-import com.fuzzylite.defuzzifier.*;
-import com.fuzzylite.factory.*;
-import com.fuzzylite.hedge.*;
-import com.fuzzylite.imex.*;
-import com.fuzzylite.norm.*;
-import com.fuzzylite.norm.s.*;
-import com.fuzzylite.norm.t.*;
-import com.fuzzylite.rule.*;
-import com.fuzzylite.term.*;
-import com.fuzzylite.variable.*;
+import com.fuzzylegacy.*;
+import com.fuzzylegacy.defuzzifier.*;
+import com.fuzzylegacy.factory.*;
+import com.fuzzylegacy.hedge.*;
+import com.fuzzylegacy.imex.*;
+import com.fuzzylegacy.norm.*;
+import com.fuzzylegacy.norm.s.*;
+import com.fuzzylegacy.norm.t.*;
+import com.fuzzylegacy.rule.*;
+import com.fuzzylegacy.term.*;
+import com.fuzzylegacy.variable.*;
 
 public class membrn1{
 public static void main(String[] args){

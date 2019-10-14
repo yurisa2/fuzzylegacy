@@ -2,7 +2,7 @@
 <svg width="45.1556mm" height="45.1556mm"
  viewBox="0 0 128 128"
  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
-<title>qtfuzzylite</title>
+<title>qtfuzzylegacy</title>
 <desc>A fuzzy logic controller graphic user interface written in Qt</desc>
 <defs>
 </defs>

@@ -23,7 +23,7 @@
 #ifndef FL_SNORMFACTORY_H
 #define	FL_SNORMFACTORY_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include "fl/factory/Factory.h"
 #include "fl/norm/SNorm.h"

@@ -1,21 +1,21 @@
 /**
-    This file is part of qtfuzzylite.
+    This file is part of qtfuzzylegacy.
 
-    qtfuzzylite is free software: you can redistribute it and/or modify
+    qtfuzzylegacy is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    qtfuzzylite is distributed in the hope that it will be useful,
+    qtfuzzylegacy is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with qtfuzzylite.  If not, see <http://www.gnu.org/licenses/>.
+    along with qtfuzzylegacy.  If not, see <http://www.gnu.org/licenses/>.
 
     Juan Rada-Vilela, 01 February 2013
-    jcrada@fuzzylite.com
+    jcrada@fuzzylegacy.com
  **/
 
 /*
@@ -30,7 +30,7 @@
 #include "fl/qt/Wizard.h"
 #include "fl/qt/Viewer.h"
 #include "fl/qt/Window.h"
-#include "fl/qt/qtfuzzylite.h"
+#include "fl/qt/qtfuzzylegacy.h"
 
 #include <QMessageBox>
 #include <QListWidgetItem>
@@ -62,8 +62,8 @@ namespace fl {
             ui->sbx_min->setSingleStep(0.01);
             ui->sbx_max->setSingleStep(0.01);
 
-            ui->sbx_min->setDecimals(fuzzylite::decimals());
-            ui->sbx_max->setDecimals(fuzzylite::decimals());
+            ui->sbx_min->setDecimals(fuzzylegacy::decimals());
+            ui->sbx_max->setDecimals(fuzzylegacy::decimals());
 
             QList<int> sizes;
             sizes << .75 * size().width() << .25 * size().width();
@@ -192,7 +192,7 @@ namespace fl {
             Defuzzifier* defuzzifier = outputVariable->getDefuzzifier();
             //            if (not defuzzifier) {
             //                defuzzifier = Factory::instance()->defuzzifier()->
-            //                        create(Centroid().className(), fl::fuzzylite::defaultDivisions());
+            //                        create(Centroid().className(), fl::fuzzylegacy::defaultDivisions());
             //            }
             editable->setDefuzzifier(defuzzifier);
 

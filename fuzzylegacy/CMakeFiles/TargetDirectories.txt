@@ -1,3 +1,9 @@
-/home/yurisa2/fuzzylite/fuzzylite/CMakeFiles/fl-bin.dir
-/home/yurisa2/fuzzylite/fuzzylite/CMakeFiles/fl-shared.dir
-/home/yurisa2/fuzzylite/fuzzylite/CMakeFiles/fl-static.dir
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/CMakeFiles/install/strip.dir
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/CMakeFiles/install/local.dir
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/CMakeFiles/install.dir
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/CMakeFiles/fl-static.dir
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/CMakeFiles/rebuild_cache.dir
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/CMakeFiles/fl-shared.dir
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/CMakeFiles/fl-bin.dir
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/CMakeFiles/edit_cache.dir
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/CMakeFiles/list_install_components.dir

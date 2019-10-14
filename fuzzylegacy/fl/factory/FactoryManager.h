@@ -23,7 +23,7 @@
 #ifndef FL_FACTORYMANAGER_H
 #define	FL_FACTORYMANAGER_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 namespace fl {
     class TNormFactory;

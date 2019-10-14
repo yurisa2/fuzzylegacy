@@ -1,5 +1,5 @@
-FILE(REMOVE_RECURSE
-  "CMakeFiles/fl-static.dir/src/fuzzylite.cpp.o"
+file(REMOVE_RECURSE
+  "CMakeFiles/fl-static.dir/src/fuzzylegacy.cpp.o"
   "CMakeFiles/fl-static.dir/src/Console.cpp.o"
   "CMakeFiles/fl-static.dir/src/defuzzifier/IntegralDefuzzifier.cpp.o"
   "CMakeFiles/fl-static.dir/src/defuzzifier/Bisector.cpp.o"
@@ -76,11 +76,11 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/fl-static.dir/src/variable/Variable.cpp.o"
   "CMakeFiles/fl-static.dir/src/variable/OutputVariable.cpp.o"
   "CMakeFiles/fl-static.dir/src/variable/InputVariable.cpp.o"
-  "bin/libfuzzylite-static.pdb"
-  "bin/libfuzzylite-static.a"
+  "bin/libfuzzylegacy-static.pdb"
+  "bin/libfuzzylegacy-static.a"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/fl-static.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/fl-static.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

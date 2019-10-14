@@ -206,7 +206,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="qtfuzzylite.qrc"/>
+  <include location="qtfuzzylegacy.qrc"/>
  </resources>
  <connections>
   <connection>

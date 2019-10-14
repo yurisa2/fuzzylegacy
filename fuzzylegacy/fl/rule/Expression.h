@@ -23,7 +23,7 @@
 #ifndef FL_EXPRESSION_H
 #define FL_EXPRESSION_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include <string>
 #include <vector>

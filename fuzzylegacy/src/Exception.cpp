@@ -83,7 +83,7 @@ namespace fl {
     std::string Exception::btCallStack(const int maxCalls) {
 #ifdef FL_BACKTRACE_OFF
         (void) maxCalls;
-        return "[backtrace missing] fuzzylite was built with option -DFL_BACKTRACE_OFF";
+        return "[backtrace missing] fuzzylegacy was built with option -DFL_BACKTRACE_OFF";
 #elif defined FL_UNIX
         std::ostringstream btStream;
         int bufferSize = maxCalls;

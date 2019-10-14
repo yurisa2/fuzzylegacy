@@ -23,11 +23,11 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>qtfuzzylite</string>
+   <string>qtfuzzylegacy</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="qtfuzzylite.qrc">
-    <normaloff>:/qtfuzzylite.png</normaloff>:/qtfuzzylite.png</iconset>
+   <iconset resource="qtfuzzylegacy.qrc">
+    <normaloff>:/qtfuzzylegacy.png</normaloff>:/qtfuzzylegacy.png</iconset>
   </property>
   <property name="unifiedTitleAndToolBarOnMac">
    <bool>true</bool>
@@ -162,7 +162,7 @@
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="qtfuzzylite.qrc">
+                     <iconset resource="qtfuzzylegacy.qrc">
                       <normaloff>:/add.png</normaloff>:/add.png</iconset>
                     </property>
                     <property name="shortcut">
@@ -182,7 +182,7 @@
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="qtfuzzylite.qrc">
+                     <iconset resource="qtfuzzylegacy.qrc">
                       <normaloff>:/remove.png</normaloff>:/remove.png</iconset>
                     </property>
                    </widget>
@@ -199,7 +199,7 @@
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="qtfuzzylite.qrc">
+                     <iconset resource="qtfuzzylegacy.qrc">
                       <normaloff>:/edit.png</normaloff>:/edit.png</iconset>
                     </property>
                    </widget>
@@ -252,7 +252,7 @@
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="qtfuzzylite.qrc">
+                     <iconset resource="qtfuzzylegacy.qrc">
                       <normaloff>:/add.png</normaloff>:/add.png</iconset>
                     </property>
                     <property name="shortcut">
@@ -272,7 +272,7 @@
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="qtfuzzylite.qrc">
+                     <iconset resource="qtfuzzylegacy.qrc">
                       <normaloff>:/remove.png</normaloff>:/remove.png</iconset>
                     </property>
                    </widget>
@@ -289,7 +289,7 @@
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="qtfuzzylite.qrc">
+                     <iconset resource="qtfuzzylegacy.qrc">
                       <normaloff>:/edit.png</normaloff>:/edit.png</iconset>
                     </property>
                    </widget>
@@ -450,7 +450,7 @@
                       <string/>
                      </property>
                      <property name="icon">
-                      <iconset resource="qtfuzzylite.qrc">
+                      <iconset resource="qtfuzzylegacy.qrc">
                        <normaloff>:/create-rules.png</normaloff>:/create-rules.png</iconset>
                      </property>
                     </widget>
@@ -464,7 +464,7 @@
                       <string/>
                      </property>
                      <property name="icon">
-                      <iconset resource="qtfuzzylite.qrc">
+                      <iconset resource="qtfuzzylegacy.qrc">
                        <normaloff>:/process.png</normaloff>:/process.png</iconset>
                      </property>
                      <property name="shortcut">
@@ -992,7 +992,7 @@
   </widget>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
-    <string>qtfuzzylite</string>
+    <string>qtfuzzylegacy</string>
    </property>
    <property name="movable">
     <bool>false</bool>
@@ -1040,7 +1040,7 @@
   </widget>
   <action name="actionTerms">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/terms.png</normaloff>:/terms.png</iconset>
    </property>
    <property name="text">
@@ -1061,7 +1061,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/import.png</normaloff>:/import.png</iconset>
    </property>
    <property name="text">
@@ -1082,7 +1082,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/export.png</normaloff>:/export.png</iconset>
    </property>
    <property name="text">
@@ -1100,7 +1100,7 @@
   </action>
   <action name="actionNew">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/new.png</normaloff>:/new.png</iconset>
    </property>
    <property name="text">
@@ -1118,14 +1118,14 @@
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/about.png</normaloff>:/about.png</iconset>
    </property>
    <property name="text">
-    <string>About qt&amp;fuzzylite</string>
+    <string>About qt&amp;fuzzylegacy</string>
    </property>
    <property name="toolTip">
-    <string>About qtfuzzylite</string>
+    <string>About qtfuzzylegacy</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+?</string>
@@ -1139,7 +1139,7 @@
   </action>
   <action name="actionQuit">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/quit.png</normaloff>:/quit.png</iconset>
    </property>
    <property name="text">
@@ -1160,7 +1160,7 @@
   </action>
   <action name="actionOpen">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/open.png</normaloff>:/open.png</iconset>
    </property>
    <property name="text">
@@ -1178,7 +1178,7 @@
   </action>
   <action name="actionSave">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/save.png</normaloff>:/save.png</iconset>
    </property>
    <property name="text">
@@ -1196,7 +1196,7 @@
   </action>
   <action name="actionSaveAs">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/save-as.png</normaloff>:/save-as.png</iconset>
    </property>
    <property name="text">
@@ -1214,7 +1214,7 @@
   </action>
   <action name="actionProperties">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/properties.png</normaloff>:/properties.png</iconset>
    </property>
    <property name="text">
@@ -1232,7 +1232,7 @@
   </action>
   <action name="actionOpenRecent">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/open-recent.png</normaloff>:/open-recent.png</iconset>
    </property>
    <property name="text">
@@ -1247,7 +1247,7 @@
   </action>
   <action name="actionReload">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/reload.png</normaloff>:/reload.png</iconset>
    </property>
    <property name="text">
@@ -1265,7 +1265,7 @@
   </action>
   <action name="actionAboutQt">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/qt-logo.png</normaloff>:/qt-logo.png</iconset>
    </property>
    <property name="text">
@@ -1283,14 +1283,14 @@
   </action>
   <action name="actionAskForHelp">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/help.png</normaloff>:/help.png</iconset>
    </property>
    <property name="text">
     <string>Ask for &amp;help...</string>
    </property>
    <property name="toolTip">
-    <string>Prepares an email to community@fuzzylite.com</string>
+    <string>Prepares an email to community@fuzzylegacy.com</string>
    </property>
    <property name="shortcut">
     <string>F1</string>
@@ -1301,7 +1301,7 @@
   </action>
   <action name="actionJoinTheCommunity">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/community.png</normaloff>:/community.png</iconset>
    </property>
    <property name="text">
@@ -1313,7 +1313,7 @@
   </action>
   <action name="actionSurface2D">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/surface2d.png</normaloff>:/surface2d.png</iconset>
    </property>
    <property name="text">
@@ -1328,19 +1328,19 @@
   </action>
   <action name="actionFollowOnTwitter">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/twitter.png</normaloff>:/twitter.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;Follow @fuzzylite</string>
+    <string>&amp;Follow @fuzzylegacy</string>
    </property>
    <property name="toolTip">
-    <string>Follow @fuzzylite on Twitter</string>
+    <string>Follow @fuzzylegacy on Twitter</string>
    </property>
   </action>
   <action name="actionCheckForUpdates">
    <property name="icon">
-    <iconset resource="qtfuzzylite.qrc">
+    <iconset resource="qtfuzzylegacy.qrc">
      <normaloff>:/updates.png</normaloff>:/updates.png</iconset>
    </property>
    <property name="text">
@@ -1355,7 +1355,7 @@
   </action>
  </widget>
  <resources>
-  <include location="qtfuzzylite.qrc"/>
+  <include location="qtfuzzylegacy.qrc"/>
  </resources>
  <connections/>
 </ui>

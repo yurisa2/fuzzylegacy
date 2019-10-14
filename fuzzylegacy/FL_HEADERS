@@ -1,5 +1,5 @@
 fl/Headers.h
-fl/fuzzylite.h
+fl/fuzzylegacy.h
 fl/Console.h
 fl/defuzzifier/Defuzzifier.h
 fl/defuzzifier/IntegralDefuzzifier.h

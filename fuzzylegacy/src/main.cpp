@@ -82,8 +82,8 @@ void exportAllExamples(const std::string& from, const std::string& to) {
     examples.push_back("/takagi-sugeno/octave/sugeno_tip_calculator");
     examples.push_back("/tsukamoto/tsukamoto");
 
-    std::string sourceBase = "/home/jcrada/Development/fl/fuzzylite/examples";
-    //    std::string targetBase = "/home/jcrada/Development/fuzzylite/examples/" + to;
+    std::string sourceBase = "/home/jcrada/Development/fl/fuzzylegacy/examples";
+    //    std::string targetBase = "/home/jcrada/Development/fuzzylegacy/examples/" + to;
     std::string targetBase = "/tmp/fl/";
 
     Importer* importer;
@@ -145,17 +145,17 @@ void exportAllExamples(const std::string& from, const std::string& to) {
                             << "\n}\n";
                 } else if (to == "java") {
                     std::string className = examples.at(i).substr(examples.at(i).find_last_of('/') + 1);
-                    target << "import com.fuzzylite.*;\n"
-                            << "import com.fuzzylite.defuzzifier.*;\n"
-                            << "import com.fuzzylite.factory.*;\n"
-                            << "import com.fuzzylite.hedge.*;\n"
-                            << "import com.fuzzylite.imex.*;\n"
-                            << "import com.fuzzylite.norm.*;\n"
-                            << "import com.fuzzylite.norm.s.*;\n"
-                            << "import com.fuzzylite.norm.t.*;\n"
-                            << "import com.fuzzylite.rule.*;\n"
-                            << "import com.fuzzylite.term.*;\n"
-                            << "import com.fuzzylite.variable.*;\n\n"
+                    target << "import com.fuzzylegacy.*;\n"
+                            << "import com.fuzzylegacy.defuzzifier.*;\n"
+                            << "import com.fuzzylegacy.factory.*;\n"
+                            << "import com.fuzzylegacy.hedge.*;\n"
+                            << "import com.fuzzylegacy.imex.*;\n"
+                            << "import com.fuzzylegacy.norm.*;\n"
+                            << "import com.fuzzylegacy.norm.s.*;\n"
+                            << "import com.fuzzylegacy.norm.t.*;\n"
+                            << "import com.fuzzylegacy.rule.*;\n"
+                            << "import com.fuzzylegacy.term.*;\n"
+                            << "import com.fuzzylegacy.variable.*;\n\n"
                             << "public class " << Op::makeValidId(className) << "{\n"
                             << "public static void main(String[] args){\n"
                             << exporter->toString(engine)
@@ -199,13 +199,13 @@ int main(int argc, char** argv) {
 #endif
 
     try {
-//        fuzzylite::setDecimals(3);
+//        fuzzylegacy::setDecimals(3);
 //        exportAllExamples("fis", "fll");
 //        exportAllExamples("fis", "fcl");
 //        exportAllExamples("fis", "fis");
 //        exportAllExamples("fis", "cpp");
 //        exportAllExamples("fis", "java");
-//        fuzzylite::setDecimals(8);
+//        fuzzylegacy::setDecimals(8);
 //        exportAllExamples("fis", "fld");
 //        return 0;
         return Console::main(argc, argv);

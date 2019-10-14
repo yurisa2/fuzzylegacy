@@ -35,12 +35,12 @@ namespace fl {
 
         std::ostringstream ss;
         ss << "========================================\n";
-        ss << "fuzzylite: a fuzzy logic control library\n";
-        ss << "version: " << fuzzylite::longVersion() << "\n";
-        ss << "author: " << fuzzylite::author() << "\n";
+        ss << "fuzzylegacy: a fuzzy logic control library\n";
+        ss << "version: " << fuzzylegacy::longVersion() << "\n";
+        ss << "author: " << fuzzylegacy::author() << "\n";
         ss << "========================================\n";
-        ss << "usage: fuzzylite inputfile outputfile\n";
-        ss << "   or: fuzzylite ";
+        ss << "usage: fuzzylegacy inputfile outputfile\n";
+        ss << "   or: fuzzylegacy ";
         for (std::size_t i = 0; i < options.size(); ++i) {
             ss << "[" << options.at(i).first << "] ";
         }
@@ -50,7 +50,7 @@ namespace fl {
             ss << "[" << options.at(i).first << " " << options.at(i).second << "] \n       ";
         }
         ss << "\n";
-        ss << "Visit http://www.fuzzylite.com for more information.";
+        ss << "Visit http://www.fuzzylegacy.com for more information.";
         return ss.str();
     }
 

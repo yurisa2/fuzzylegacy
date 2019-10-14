@@ -23,7 +23,7 @@
 #ifndef FL_CONSEQUENT_H
 #define FL_CONSEQUENT_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include <string>
 #include <vector>

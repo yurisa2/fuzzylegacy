@@ -23,7 +23,7 @@
 #ifndef FL_FLDEXPORTER_H
 #define	FL_FLDEXPORTER_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 #include "fl/imex/Exporter.h"
 
 namespace fl {

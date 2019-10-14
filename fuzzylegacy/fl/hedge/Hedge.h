@@ -23,7 +23,7 @@
 #ifndef FL_HEDGE_H
 #define FL_HEDGE_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 
 

@@ -23,7 +23,7 @@
 #ifndef FL_VARIABLE_H
 #define FL_VARIABLE_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 
 #include "fl/defuzzifier/Centroid.h"

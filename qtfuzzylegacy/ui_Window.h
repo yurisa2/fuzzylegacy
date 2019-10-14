@@ -1,8 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'Window.ui'
 **
-** Created: Mon Oct 14 09:14:43 2019
-**      by: Qt User Interface Compiler version 4.8.3
+** Created by: Qt User Interface Compiler version 4.8.7
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -159,7 +158,7 @@ public:
         Window->setSizePolicy(sizePolicy);
         Window->setBaseSize(QSize(0, 0));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/qtfuzzylite.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/qtfuzzylegacy.png"), QSize(), QIcon::Normal, QIcon::Off);
         Window->setWindowIcon(icon);
         Window->setUnifiedTitleAndToolBarOnMac(true);
         actionTerms = new QAction(Window);
@@ -817,7 +816,7 @@ public:
 
     void retranslateUi(QMainWindow *Window)
     {
-        Window->setWindowTitle(QApplication::translate("Window", "qtfuzzylite", 0, QApplication::UnicodeUTF8));
+        Window->setWindowTitle(QApplication::translate("Window", "qtfuzzylegacy", 0, QApplication::UnicodeUTF8));
         actionTerms->setText(QApplication::translate("Window", "&Terms", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
         actionTerms->setToolTip(QApplication::translate("Window", "Terms", 0, QApplication::UnicodeUTF8));
@@ -838,9 +837,9 @@ public:
         actionNew->setToolTip(QApplication::translate("Window", "New", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
         actionNew->setShortcut(QApplication::translate("Window", "Ctrl+N", 0, QApplication::UnicodeUTF8));
-        actionAbout->setText(QApplication::translate("Window", "About qt&fuzzylite", 0, QApplication::UnicodeUTF8));
+        actionAbout->setText(QApplication::translate("Window", "About qt&fuzzylegacy", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        actionAbout->setToolTip(QApplication::translate("Window", "About qtfuzzylite", 0, QApplication::UnicodeUTF8));
+        actionAbout->setToolTip(QApplication::translate("Window", "About qtfuzzylegacy", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
         actionAbout->setShortcut(QApplication::translate("Window", "Ctrl+?", 0, QApplication::UnicodeUTF8));
         actionQuit->setText(QApplication::translate("Window", "&Quit", 0, QApplication::UnicodeUTF8));
@@ -883,7 +882,7 @@ public:
 #endif // QT_NO_TOOLTIP
         actionAskForHelp->setText(QApplication::translate("Window", "Ask for &help...", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        actionAskForHelp->setToolTip(QApplication::translate("Window", "Prepares an email to community@fuzzylite.com", 0, QApplication::UnicodeUTF8));
+        actionAskForHelp->setToolTip(QApplication::translate("Window", "Prepares an email to community@fuzzylegacy.com", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
         actionAskForHelp->setShortcut(QApplication::translate("Window", "F1", 0, QApplication::UnicodeUTF8));
         actionJoinTheCommunity->setText(QApplication::translate("Window", "&Join the community...", 0, QApplication::UnicodeUTF8));
@@ -893,9 +892,9 @@ public:
         actionSurface2D->setToolTip(QApplication::translate("Window", "Surface 2D", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
         actionSurface2D->setShortcut(QApplication::translate("Window", "Ctrl+2", 0, QApplication::UnicodeUTF8));
-        actionFollowOnTwitter->setText(QApplication::translate("Window", "&Follow @fuzzylite", 0, QApplication::UnicodeUTF8));
+        actionFollowOnTwitter->setText(QApplication::translate("Window", "&Follow @fuzzylegacy", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        actionFollowOnTwitter->setToolTip(QApplication::translate("Window", "Follow @fuzzylite on Twitter", 0, QApplication::UnicodeUTF8));
+        actionFollowOnTwitter->setToolTip(QApplication::translate("Window", "Follow @fuzzylegacy on Twitter", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
         actionCheckForUpdates->setText(QApplication::translate("Window", "Check for &updates", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
@@ -955,7 +954,7 @@ public:
         label_3->setText(QApplication::translate("Window", "Rules", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("Window", "Degree", 0, QApplication::UnicodeUTF8));
         tab_container->setItemText(tab_container->indexOf(tab_containerPage2), QApplication::translate("Window", "Control", 0, QApplication::UnicodeUTF8));
-        toolBar->setWindowTitle(QApplication::translate("Window", "qtfuzzylite", 0, QApplication::UnicodeUTF8));
+        toolBar->setWindowTitle(QApplication::translate("Window", "qtfuzzylegacy", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

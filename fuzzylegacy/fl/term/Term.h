@@ -23,7 +23,7 @@
 #ifndef FL_TERM_H
 #define FL_TERM_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include "fl/Operation.h"
 

@@ -1,4 +1,4 @@
-src/fuzzylite.cpp
+src/fuzzylegacy.cpp
 src/Console.cpp
 src/defuzzifier/IntegralDefuzzifier.cpp
 src/defuzzifier/Bisector.cpp

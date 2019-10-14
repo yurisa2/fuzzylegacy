@@ -23,7 +23,7 @@
 #ifndef FL_EXCEPTION_H
 #define FL_EXCEPTION_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include <exception>
 #include <string>

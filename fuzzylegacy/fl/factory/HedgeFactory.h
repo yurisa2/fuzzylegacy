@@ -23,7 +23,7 @@
 #ifndef FL_HEDGEFACTORY_H
 #define	FL_HEDGEFACTORY_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include "fl/factory/Factory.h"
 #include "fl/hedge/Hedge.h"

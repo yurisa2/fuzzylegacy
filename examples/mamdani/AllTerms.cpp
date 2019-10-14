@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv){
 fl::Engine* engine = new fl::Engine;
-engine->setName("qtfuzzylite");
+engine->setName("qtfuzzylegacy");
 
 fl::InputVariable* inputVariable = new fl::InputVariable;
 inputVariable->setEnabled(true);

@@ -1,4 +1,4 @@
-Engine: qtfuzzylite
+Engine: qtfuzzylegacy
 InputVariable: AllInputTerms
   enabled: true
   range: 0.000 6.500

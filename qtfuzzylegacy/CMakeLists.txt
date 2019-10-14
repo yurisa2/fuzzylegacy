@@ -3,10 +3,10 @@ cmake_minimum_required(VERSION 2.8)
 #After building:
 # In Linux:
 # In Mac:
-# otool -L qtfuzzylite #gives the dependencies of qtfuzzylite
-# install_name_tool -change /Users/jcrada/Development/fl/fuzzylite/fuzzylite/bin/libfuzzylite.dylib @executable_path/../Frameworks/libfuzzylite.dylib qtfuzzylite.app/Contents/MacOS/qtfuzzylite
+# otool -L qtfuzzylegacy #gives the dependencies of qtfuzzylegacy
+# install_name_tool -change /Users/jcrada/Development/fl/fuzzylegacy/fuzzylegacy/bin/libfuzzylegacy.dylib @executable_path/../Frameworks/libfuzzylegacy.dylib qtfuzzylegacy.app/Contents/MacOS/qtfuzzylegacy
 
-project(qtfuzzylite CXX)
+project(qtfuzzylegacy CXX)
 
 set(CMAKE_VERBOSE_MAKEFILE true)
 
@@ -14,7 +14,7 @@ set(CMAKE_VERBOSE_MAKEFILE true)
 if(WIN32)
     message("Windows")
     add_definitions(-DFL_WINDOWS)
-	set(CMAKE_CXX_FLAGS " /WX /EHsc")
+	set(CMAKE_CXX_FLAGS " /WX /EHsc -std=c++98")
 	#set(CMAKE_CXX_FLAGS " /EHsc")
 endif()
 
@@ -36,7 +36,7 @@ set(FLQT_VERSION 4.0)
 add_definitions(-DFLQT_VERSION="${FLQT_VERSION}")
 
 set(FLQT_LONG_VERSION "${FLQT_VERSION}b${FLQT_DATE}")
-set(FLQT_FULLNAME "qtfuzzylite-${FLQT_LONG_VERSION}")
+set(FLQT_FULLNAME "qtfuzzylegacy-${FLQT_LONG_VERSION}")
 
 add_definitions(-DFL_BUILD_PATH="${CMAKE_SOURCE_DIR}") #used to determine FL__FILE__
 
@@ -50,13 +50,13 @@ message("CMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR}")
 if(FL_DEBUG)
    set(CMAKE_BUILD_TYPE Debug)
    set(FL_CONF -dbg)
-   find_library(fl-shared-dbg fuzzylite-dbg 
-        HINTS "${CMAKE_SOURCE_DIR}/../fuzzylite/bin")
+   find_library(fl-shared-dbg fuzzylegacy-dbg 
+        HINTS "${CMAKE_SOURCE_DIR}/../fuzzylegacy/bin")
 else(FL_DEBUG)
    set(CMAKE_BUILD_TYPE Release)
    set(FL_CONF)
-   find_library(fl-shared NAMES fuzzylite 
-        HINTS "${CMAKE_SOURCE_DIR}/../fuzzylite/bin")
+   find_library(fl-shared NAMES fuzzylegacy 
+        HINTS "${CMAKE_SOURCE_DIR}/../fuzzylegacy/bin")
 endif(FL_DEBUG)
 
 
@@ -64,7 +64,7 @@ if(FL_USE_FLOAT)
     add_definitions(-DFL_USE_FLOAT)
 endif(FL_USE_FLOAT)
 
-include_directories(. ${CMAKE_SOURCE_DIR}/../fuzzylite)
+include_directories(. ${CMAKE_SOURCE_DIR}/../fuzzylegacy)
 
 
 set(qtfl-headers
@@ -81,7 +81,7 @@ set(qtfl-headers
 )
 
 set(qtfl-sources
-    src/qtfuzzylite.cpp
+    src/qtfuzzylegacy.cpp
     src/About.cpp
     src/Control.cpp
     src/ImEx.cpp
@@ -109,13 +109,13 @@ set(qtfl-uis
 
 
 if(APPLE)
-    set(qtfl-icon ${CMAKE_CURRENT_SOURCE_DIR}/ui/icons/qtfuzzylite.icns)
+    set(qtfl-icon ${CMAKE_CURRENT_SOURCE_DIR}/ui/icons/qtfuzzylegacy.icns)
     set_source_files_properties( ${qtfl-icon} PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
     set(qtfl-output ${qtfl-output} ${qtfl-icon})
 endif(APPLE)
 
 if(WIN32)
-    set(qtfl-sources ${qtfl-sources} ui/qtfuzzylite.rc)
+    set(qtfl-sources ${qtfl-sources} ui/qtfuzzylegacy.rc)
 endif()
 
 
@@ -132,18 +132,18 @@ endif(WIN32)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
 qt5_wrap_ui(qtfl-output  ${qtfl-uis})
-qt5_add_resources(qtfl-output ui/qtfuzzylite.qrc)
+qt5_add_resources(qtfl-output ui/qtfuzzylegacy.qrc)
 
-add_executable(qtfuzzylite
+add_executable(qtfuzzylegacy
                 MACOSX_BUNDLE
                 WIN32
                 ${qtfl-sources} ${qtfl-output}
                 #for the ide
                 ${qtfl-headers} ${qtfl-uis})
-set_target_properties(qtfuzzylite PROPERTIES DEBUG_POSTFIX -dbg)
+set_target_properties(qtfuzzylegacy PROPERTIES DEBUG_POSTFIX -dbg)
 
-qt5_use_modules(qtfuzzylite Widgets Network)
-target_link_libraries(qtfuzzylite ${fl-shared${FL_CONF}})
+qt5_use_modules(qtfuzzylegacy Widgets Network)
+target_link_libraries(qtfuzzylegacy ${fl-shared${FL_CONF}})
 
 else()
 #Use Qt4
@@ -153,16 +153,16 @@ include(${QT_USE_FILE})
 
 qt4_wrap_cpp(qtfl-output ${qtfl-headers})
 qt4_wrap_ui(qtfl-output  ${qtfl-uis})
-qt4_add_resources(qtfl-output ui/qtfuzzylite.qrc)
+qt4_add_resources(qtfl-output ui/qtfuzzylegacy.qrc)
 
-add_executable(qtfuzzylite
+add_executable(qtfuzzylegacy
                 MACOSX_BUNDLE
                 WIN32
                 ${qtfl-sources} ${qtfl-output}
                 #for the ide
                 ${qtfl-headers} ${qtfl-uis})
-set_target_properties(qtfuzzylite PROPERTIES DEBUG_POSTFIX -dbg)
-target_link_libraries(qtfuzzylite ${QT_LIBRARIES} ${fl-shared${FL_CONF}})
+set_target_properties(qtfuzzylegacy PROPERTIES DEBUG_POSTFIX -dbg)
+target_link_libraries(qtfuzzylegacy ${QT_LIBRARIES} ${fl-shared${FL_CONF}})
 
 
 endif()
@@ -170,9 +170,9 @@ endif()
 
 
 if(APPLE)
-    set_target_properties(qtfuzzylite PROPERTIES
+    set_target_properties(qtfuzzylegacy PROPERTIES
     MACOSX_BUNDLE_INFO_STRING "${FLQT_FULLNAME} by Juan Rada-Vilela, licensed under the GNU GPL 3.0"
-    MACOSX_BUNDLE_ICON_FILE qtfuzzylite.icns
+    MACOSX_BUNDLE_ICON_FILE qtfuzzylegacy.icns
     MACOSX_BUNDLE_GUI_IDENTIFIER "${PROJECT_NAME}"
     MACOSX_BUNDLE_BUNDLE_NAME "${PROJECT_NAME}"
     MACOSX_BUNDLE_BUNDLE_VERSION "${FLQT_DATE}"
@@ -181,30 +181,30 @@ if(APPLE)
     MACOSX_BUNDLE_COPYRIGHT "Juan Rada-Vilela, Licensed under the GNU General Public License 3.0"
 )
     add_custom_target(  mac-deploy ALL
-                        COMMAND ${QT_BINARY_DIR}/macdeployqt qtfuzzylite.app
+                        COMMAND ${QT_BINARY_DIR}/macdeployqt qtfuzzylegacy.app
                         WORKING_DIRECTORY ${WORK_DIR}
                         DEPENDS ${PROJECT_NAME})
     add_custom_target(  mac-dmg
-                        COMMAND ${QT_BINARY_DIR}/macdeployqt qtfuzzylite.app -dmg -no-plugins
+                        COMMAND ${QT_BINARY_DIR}/macdeployqt qtfuzzylegacy.app -dmg -no-plugins
                         WORKING_DIRECTORY ${WORK_DIR}
                         DEPENDS mac-deploy )
 
 
-#macdeployqt qtfuzzylite.app
+#macdeployqt qtfuzzylegacy.app
 #http://dragly.org/2012/01/13/deploy-qt-applications-for-mac-os-x/
 endif(APPLE)
 
 if(WIN32)
-	message("copying ${CMAKE_SOURCE_DIR}/../fuzzylite/bin/fuzzylite${FL_CONF}.dll")
-	add_custom_command(TARGET qtfuzzylite POST_BUILD 
+	message("copying ${CMAKE_SOURCE_DIR}/../fuzzylegacy/bin/fuzzylegacy${FL_CONF}.dll")
+	add_custom_command(TARGET qtfuzzylegacy POST_BUILD 
 		COMMAND ${CMAKE_COMMAND} -E copy_if_different 
-        "${CMAKE_SOURCE_DIR}/../fuzzylite/bin/fuzzylite${FL_CONF}.dll"
+        "${CMAKE_SOURCE_DIR}/../fuzzylegacy/bin/fuzzylegacy${FL_CONF}.dll"
         ${CMAKE_SOURCE_DIR})                 # <--this is out-file path
 endif()
 
 
 if(NOT APPLE)
-    install(TARGETS qtfuzzylite RUNTIME DESTINATION bin)
+    install(TARGETS qtfuzzylegacy RUNTIME DESTINATION bin)
 endif()
 
 
@@ -213,7 +213,7 @@ message("${FLQT_FULLNAME}\n")
 message("FL_DEBUG=${FL_DEBUG}")
 message("FL_USE_FLOAT=${FL_USE_FLOAT}")
 message("FL_USE_QT5=${FL_USE_QT5}")
-message("fuzzylite=${fl-shared}${FL_CONF}")
+message("fuzzylegacy=${fl-shared}${FL_CONF}")
 message("=====================================\n")
 
 ##unix uninstall

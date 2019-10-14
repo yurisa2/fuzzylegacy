@@ -1,5 +1,5 @@
-FILE(REMOVE_RECURSE
-  "CMakeFiles/fl-shared.dir/src/fuzzylite.cpp.o"
+file(REMOVE_RECURSE
+  "CMakeFiles/fl-shared.dir/src/fuzzylegacy.cpp.o"
   "CMakeFiles/fl-shared.dir/src/Console.cpp.o"
   "CMakeFiles/fl-shared.dir/src/defuzzifier/IntegralDefuzzifier.cpp.o"
   "CMakeFiles/fl-shared.dir/src/defuzzifier/Bisector.cpp.o"
@@ -76,11 +76,11 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/fl-shared.dir/src/variable/Variable.cpp.o"
   "CMakeFiles/fl-shared.dir/src/variable/OutputVariable.cpp.o"
   "CMakeFiles/fl-shared.dir/src/variable/InputVariable.cpp.o"
-  "bin/libfuzzylite.pdb"
-  "bin/libfuzzylite.so"
+  "bin/libfuzzylegacy.pdb"
+  "bin/libfuzzylegacy.so"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/fl-shared.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/fl-shared.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

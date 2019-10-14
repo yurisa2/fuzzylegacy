@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/yurisa2/fuzzylite/fuzzylite/src/Console.cpp
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/src/Console.cpp
 fl/Console.h
-/home/yurisa2/fuzzylite/fuzzylite/src/fl/Console.h
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/src/fl/Console.h
 fl/Headers.h
-/home/yurisa2/fuzzylite/fuzzylite/src/fl/Headers.h
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/src/fl/Headers.h
 vector
 -
 utility
@@ -20,9 +20,9 @@ stdlib.h
 fstream
 -
 
-/home/yurisa2/fuzzylite/fuzzylite/src/main.cpp
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/src/main.cpp
 fl/Headers.h
-/home/yurisa2/fuzzylite/fuzzylite/src/fl/Headers.h
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/fuzzylegacy/src/fl/Headers.h
 typeinfo
 -
 iomanip
@@ -41,8 +41,8 @@ map
 -
 
 fl/Engine.h
-fl/fuzzylite.h
-fl/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/fl/fuzzylegacy.h
 fl/defuzzifier/IntegralDefuzzifier.h
 fl/fl/defuzzifier/IntegralDefuzzifier.h
 vector
@@ -51,8 +51,8 @@ string
 -
 
 fl/Exception.h
-fl/fuzzylite.h
-fl/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/fl/fuzzylegacy.h
 exception
 -
 string
@@ -61,8 +61,8 @@ vector
 -
 
 fl/Headers.h
-fl/fuzzylite.h
-fl/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/fl/fuzzylegacy.h
 fl/Console.h
 fl/fl/Console.h
 fl/Engine.h
@@ -225,8 +225,8 @@ fl/variable/Variable.h
 fl/fl/variable/Variable.h
 
 fl/Operation.h
-fl/fuzzylite.h
-fl/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/fl/fuzzylegacy.h
 fl/Exception.h
 fl/fl/Exception.h
 string
@@ -245,8 +245,8 @@ fl/defuzzifier/IntegralDefuzzifier.h
 fl/defuzzifier/fl/defuzzifier/IntegralDefuzzifier.h
 
 fl/defuzzifier/Defuzzifier.h
-fl/fuzzylite.h
-fl/defuzzifier/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/defuzzifier/fl/fuzzylegacy.h
 string
 -
 
@@ -275,8 +275,8 @@ fl/defuzzifier/Defuzzifier.h
 fl/defuzzifier/fl/defuzzifier/Defuzzifier.h
 
 fl/factory/DefuzzifierFactory.h
-fl/fuzzylite.h
-fl/factory/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/factory/fl/fuzzylegacy.h
 fl/factory/Factory.h
 fl/factory/fl/factory/Factory.h
 string
@@ -285,8 +285,8 @@ vector
 -
 
 fl/factory/Factory.h
-fl/fuzzylite.h
-fl/factory/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/factory/fl/fuzzylegacy.h
 map
 -
 string
@@ -295,36 +295,36 @@ vector
 -
 
 fl/factory/FactoryManager.h
-fl/fuzzylite.h
-fl/factory/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/factory/fl/fuzzylegacy.h
 
 fl/factory/HedgeFactory.h
-fl/fuzzylite.h
-fl/factory/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/factory/fl/fuzzylegacy.h
 fl/factory/Factory.h
 fl/factory/fl/factory/Factory.h
 fl/hedge/Hedge.h
 fl/factory/fl/hedge/Hedge.h
 
 fl/factory/SNormFactory.h
-fl/fuzzylite.h
-fl/factory/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/factory/fl/fuzzylegacy.h
 fl/factory/Factory.h
 fl/factory/fl/factory/Factory.h
 fl/norm/SNorm.h
 fl/factory/fl/norm/SNorm.h
 
 fl/factory/TNormFactory.h
-fl/fuzzylite.h
-fl/factory/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/factory/fl/fuzzylegacy.h
 fl/factory/Factory.h
 fl/factory/fl/factory/Factory.h
 fl/norm/TNorm.h
 fl/factory/fl/norm/TNorm.h
 
 fl/factory/TermFactory.h
-fl/fuzzylite.h
-fl/factory/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/factory/fl/fuzzylegacy.h
 fl/factory/Factory.h
 fl/factory/fl/factory/Factory.h
 fl/term/Term.h
@@ -334,7 +334,7 @@ vector
 string
 -
 
-fl/fuzzylite.h
+fl/fuzzylegacy.h
 iostream
 -
 sstream
@@ -353,8 +353,8 @@ fl/hedge/Hedge.h
 fl/hedge/fl/hedge/Hedge.h
 
 fl/hedge/Hedge.h
-fl/fuzzylite.h
-fl/hedge/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/hedge/fl/fuzzylegacy.h
 string
 -
 
@@ -379,8 +379,8 @@ fl/imex/Exporter.h
 fl/imex/fl/imex/Exporter.h
 
 fl/imex/Exporter.h
-fl/fuzzylite.h
-fl/imex/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/imex/fl/fuzzylegacy.h
 string
 -
 
@@ -413,28 +413,28 @@ utility
 -
 
 fl/imex/FldExporter.h
-fl/fuzzylite.h
-fl/imex/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/imex/fl/fuzzylegacy.h
 fl/imex/Exporter.h
 fl/imex/fl/imex/Exporter.h
 
 fl/imex/FllExporter.h
-fl/fuzzylite.h
-fl/imex/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/imex/fl/fuzzylegacy.h
 fl/imex/Exporter.h
 fl/imex/fl/imex/Exporter.h
 
 fl/imex/FllImporter.h
-fl/fuzzylite.h
-fl/imex/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/imex/fl/fuzzylegacy.h
 fl/imex/Importer.h
 fl/imex/fl/imex/Importer.h
 utility
 -
 
 fl/imex/Importer.h
-fl/fuzzylite.h
-fl/imex/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/imex/fl/fuzzylegacy.h
 string
 -
 
@@ -443,8 +443,8 @@ fl/imex/Exporter.h
 fl/imex/fl/imex/Exporter.h
 
 fl/norm/Norm.h
-fl/fuzzylite.h
-fl/norm/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/norm/fl/fuzzylegacy.h
 fl/Operation.h
 fl/norm/fl/Operation.h
 string
@@ -511,36 +511,36 @@ fl/norm/TNorm.h
 fl/norm/t/fl/norm/TNorm.h
 
 fl/rule/Antecedent.h
-fl/fuzzylite.h
-fl/rule/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/rule/fl/fuzzylegacy.h
 string
 -
 
 fl/rule/Consequent.h
-fl/fuzzylite.h
-fl/rule/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/rule/fl/fuzzylegacy.h
 string
 -
 vector
 -
 
 fl/rule/Expression.h
-fl/fuzzylite.h
-fl/rule/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/rule/fl/fuzzylegacy.h
 string
 -
 vector
 -
 
 fl/rule/Rule.h
-fl/fuzzylite.h
-fl/rule/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/rule/fl/fuzzylegacy.h
 string
 -
 
 fl/rule/RuleBlock.h
-fl/fuzzylite.h
-fl/rule/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/rule/fl/fuzzylegacy.h
 vector
 -
 string
@@ -621,8 +621,8 @@ fl/term/Term.h
 fl/term/fl/term/Term.h
 
 fl/term/Term.h
-fl/fuzzylite.h
-fl/term/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/term/fl/fuzzylegacy.h
 fl/Operation.h
 fl/term/fl/Operation.h
 string
@@ -663,8 +663,8 @@ limits
 -
 
 fl/variable/Variable.h
-fl/fuzzylite.h
-fl/variable/fl/fuzzylite.h
+fl/fuzzylegacy.h
+fl/variable/fl/fuzzylegacy.h
 fl/defuzzifier/Centroid.h
 fl/variable/fl/defuzzifier/Centroid.h
 fl/norm/Norm.h

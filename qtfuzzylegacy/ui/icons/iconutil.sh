@@ -1,2 +1,2 @@
 #!/bin/bash
-iconutil -c icns qtfuzzylite.iconset
+iconutil -c icns qtfuzzylegacy.iconset

@@ -23,7 +23,7 @@
 #ifndef FL_EXPORTER_H
 #define	FL_EXPORTER_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include <string>
 

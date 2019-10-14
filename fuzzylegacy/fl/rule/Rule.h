@@ -23,7 +23,7 @@
 #ifndef FL_RULE_H
 #define FL_RULE_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include <string>
 

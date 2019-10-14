@@ -1,19 +1,26 @@
 Determining if the Q_WS_WIN exist failed with the following output:
-Change Dir: /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp
+Change Dir: /home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1370053861/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1370053861.dir/build.make CMakeFiles/cmTryCompileExec1370053861.dir/build
-make[1]: Entering directory `/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1370053861.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1370053861.dir/CheckSymbolExists.cxx.o -c /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
-make[1]: Leaving directory `/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp'
-make[1]: *** [CMakeFiles/cmTryCompileExec1370053861.dir/CheckSymbolExists.cxx.o] Error 1
-make: *** [cmTryCompileExec1370053861/fast] Error 2
+Run Build Command:"/usr/bin/make" "cmTC_85b0e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_85b0e.dir/build.make CMakeFiles/cmTC_85b0e.dir/build
+make[1]: Entering directory '/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_85b0e.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_85b0e.dir/CheckSymbolExists.cxx.o -c /home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_85b0e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_85b0e.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_85b0e.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_85b0e/fast' failed
+make: *** [cmTC_85b0e/fast] Error 2
 
-File /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 
@@ -29,21 +36,28 @@ int main(int argc, char** argv)
 }
 
 Determining if the Q_WS_QWS exist failed with the following output:
-Change Dir: /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp
+Change Dir: /home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1018452021/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1018452021.dir/build.make CMakeFiles/cmTryCompileExec1018452021.dir/build
-make[1]: Entering directory `/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1018452021.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1018452021.dir/CheckSymbolExists.cxx.o -c /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
-make[1]: Leaving directory `/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp'
-make[1]: *** [CMakeFiles/cmTryCompileExec1018452021.dir/CheckSymbolExists.cxx.o] Error 1
-make: *** [cmTryCompileExec1018452021/fast] Error 2
+Run Build Command:"/usr/bin/make" "cmTC_a2187/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a2187.dir/build.make CMakeFiles/cmTC_a2187.dir/build
+make[1]: Entering directory '/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a2187.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_a2187.dir/CheckSymbolExists.cxx.o -c /home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_a2187.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a2187.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a2187.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a2187/fast' failed
+make: *** [cmTC_a2187/fast] Error 2
 
-File /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 
@@ -59,21 +73,28 @@ int main(int argc, char** argv)
 }
 
 Determining if the Q_WS_MAC exist failed with the following output:
-Change Dir: /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp
+Change Dir: /home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec432394067/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec432394067.dir/build.make CMakeFiles/cmTryCompileExec432394067.dir/build
-make[1]: Entering directory `/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec432394067.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec432394067.dir/CheckSymbolExists.cxx.o -c /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
-make[1]: Leaving directory `/home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp'
-make[1]: *** [CMakeFiles/cmTryCompileExec432394067.dir/CheckSymbolExists.cxx.o] Error 1
-make: *** [cmTryCompileExec432394067/fast] Error 2
+Run Build Command:"/usr/bin/make" "cmTC_fe9fa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fe9fa.dir/build.make CMakeFiles/cmTC_fe9fa.dir/build
+make[1]: Entering directory '/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fe9fa.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_fe9fa.dir/CheckSymbolExists.cxx.o -c /home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_fe9fa.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_fe9fa.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_fe9fa.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fe9fa/fast' failed
+make: *** [cmTC_fe9fa/fast] Error 2
 
-File /home/yurisa2/fuzzylite/qtfuzzylite/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 

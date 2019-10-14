@@ -26,7 +26,7 @@
 #ifndef FL_DEFUZZIFIER_H
 #define FL_DEFUZZIFIER_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 #include <string>
 
 namespace fl {

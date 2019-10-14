@@ -63,7 +63,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="qtfuzzylite.qrc">
+         <iconset resource="qtfuzzylegacy.qrc">
           <normaloff>:/clone.png</normaloff>:/clone.png</iconset>
         </property>
        </widget>
@@ -386,7 +386,7 @@ sure 'x' is followed by 'y'.</string>
                     <string>Process (x,y)</string>
                    </property>
                    <property name="icon">
-                    <iconset resource="qtfuzzylite.qrc">
+                    <iconset resource="qtfuzzylegacy.qrc">
                      <normaloff>:/process.png</normaloff>:/process.png</iconset>
                    </property>
                    <property name="toolButtonStyle">
@@ -1213,7 +1213,7 @@ sure 'x' is followed by 'y'.</string>
                     <string>Process</string>
                    </property>
                    <property name="icon">
-                    <iconset resource="qtfuzzylite.qrc">
+                    <iconset resource="qtfuzzylegacy.qrc">
                      <normaloff>:/process.png</normaloff>:/process.png</iconset>
                    </property>
                    <property name="toolButtonStyle">
@@ -1230,7 +1230,7 @@ sure 'x' is followed by 'y'.</string>
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="qtfuzzylite.qrc">
+                    <iconset resource="qtfuzzylegacy.qrc">
                      <normaloff>:/create-rules.png</normaloff>:/create-rules.png</iconset>
                    </property>
                    <property name="checkable">
@@ -1299,7 +1299,7 @@ sure 'x' is followed by 'y'.</string>
   <tabstop>buttonBox</tabstop>
  </tabstops>
  <resources>
-  <include location="qtfuzzylite.qrc"/>
+  <include location="qtfuzzylegacy.qrc"/>
  </resources>
  <connections>
   <connection>

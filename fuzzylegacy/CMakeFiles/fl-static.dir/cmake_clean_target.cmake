@@ -1,3 +1,3 @@
-FILE(REMOVE_RECURSE
-  "bin/libfuzzylite-static.a"
+file(REMOVE_RECURSE
+  "bin/libfuzzylegacy-static.a"
 )

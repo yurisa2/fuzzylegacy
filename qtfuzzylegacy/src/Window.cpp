@@ -1,21 +1,21 @@
 /**
-    This file is part of qtfuzzylite.
+    This file is part of qtfuzzylegacy.
 
-    qtfuzzylite is free software: you can redistribute it and/or modify
+    qtfuzzylegacy is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    qtfuzzylite is distributed in the hope that it will be useful,
+    qtfuzzylegacy is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with qtfuzzylite.  If not, see <http://www.gnu.org/licenses/>.
+    along with qtfuzzylegacy.  If not, see <http://www.gnu.org/licenses/>.
 
     Juan Rada-Vilela, 01 February 2013
-    jcrada@fuzzylite.com
+    jcrada@fuzzylegacy.com
  **/
 
 /*
@@ -37,7 +37,7 @@
 #include "fl/qt/Control.h"
 #include "fl/qt/Surface2D.h"
 
-#include "fl/qt/qtfuzzylite.h"
+#include "fl/qt/qtfuzzylegacy.h"
 
 #include <QListWidgetItem>
 #include <QScrollBar>
@@ -145,7 +145,7 @@ namespace fl {
         }
 
         void Window::updateWindowTitle() {
-            QString title = "qtfuzzylite - ";
+            QString title = "qtfuzzylegacy - ";
             if (_currentFile.isEmpty()) title += "untitled";
             else title += QFileInfo(_currentFile).fileName();
             if (_currentFileModified) title += "*";
@@ -191,7 +191,7 @@ namespace fl {
             menuImport->setIcon(QIcon(":/import.png"));
             QObject::connect(ui->actionImport, SIGNAL(triggered()), this, SLOT(onMenuImport()));
 
-            menuImport->addAction("FuzzyLite Language (&FLL)", this, SLOT(onMenuImportFromFLL()));
+            menuImport->addAction("fuzzylegacy Language (&FLL)", this, SLOT(onMenuImportFromFLL()));
             menuImport->addAction("Fuzzy Controller Language (FC&L)", this, SLOT(onMenuImportFromFCL()));
             menuImport->addAction("Fuzzy Inference System (FI&S)", this, SLOT(onMenuImportFromFIS()));
 
@@ -201,15 +201,15 @@ namespace fl {
             menuExport->setIcon(QIcon(":/export.png"));
             QObject::connect(ui->actionExport, SIGNAL(triggered()), this, SLOT(onMenuExport()));
 
-            menuExport->addAction("&FuzzyLite Language (FLL)", this, SLOT(onMenuExportToFLL()));
+            menuExport->addAction("&fuzzylegacy Language (FLL)", this, SLOT(onMenuExportToFLL()));
             menuExport->addAction("Fuzzy Controller &Language (FCL)", this, SLOT(onMenuExportToFCL()));
             menuExport->addAction("Fuzzy Inference &System (FIS)", this, SLOT(onMenuExportToFIS()));
             menuExport->addSeparator();
-            menuExport->addAction("FuzzyLite Dataset (FLD) vie&w", this, SLOT(onMenuExportToDatasetView()));
-            menuExport->addAction("FuzzyLite Dataset (FLD) fil&e", this, SLOT(onMenuExportToDatasetFile()));
+            menuExport->addAction("fuzzylegacy Dataset (FLD) vie&w", this, SLOT(onMenuExportToDatasetView()));
+            menuExport->addAction("fuzzylegacy Dataset (FLD) fil&e", this, SLOT(onMenuExportToDatasetFile()));
             menuExport->addSeparator();
-            menuExport->addAction("fuzzylite (&C++)", this, SLOT(onMenuExportToCpp()));
-            menuExport->addAction("jfuzzylite (&Java)", this, SLOT(onMenuExportToJava()));
+            menuExport->addAction("fuzzylegacy (&C++)", this, SLOT(onMenuExportToCpp()));
+            menuExport->addAction("jfuzzylegacy (&Java)", this, SLOT(onMenuExportToJava()));
             menuFile->addMenu(menuExport);
 
             menuFile->addSeparator();
@@ -1185,7 +1185,7 @@ namespace fl {
             QString recentFilter = settings.value("file/recentFilter").toString();
             QStringList formats;
             formats << "Supported formats (*.fll *.fcl *.fis)"
-                    << "FuzzyLite Language (*.fll)"
+                    << "fuzzylegacy Language (*.fll)"
                     << "Fuzzy Logic Controller (*.fcl)"
                     << "Fuzzy Inference System (*.fis)"
                     << "All files (*.*)";
@@ -1212,7 +1212,7 @@ namespace fl {
 
             QFile file(filename);
             if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-                QMessageBox::critical(this, "qtfuzzylite",
+                QMessageBox::critical(this, "qtfuzzylegacy",
                         "Error opening file: " + filename,
                         QMessageBox::Ok);
                 return;
@@ -1236,7 +1236,7 @@ namespace fl {
                 QString recentFormat = settings.value("file/recentFormat").toString();
                 bool ok;
                 QStringList formats;
-                formats << "FuzzyLite Language (*.fll)"
+                formats << "fuzzylegacy Language (*.fll)"
                         << "Fuzzy Controller Language (*.fcl)"
                         << "Fuzzy Inference System (*.fis)";
                 int recentFormatIndex = formats.indexOf(recentFormat);
@@ -1360,7 +1360,7 @@ namespace fl {
             QString recentFilter = settings.value("file/recentFilter").toString();
             QStringList filters;
             filters << "Supported files (*.fll *.fcl *.fis)"
-                    << "FuzzyLite Language (*.fll)"
+                    << "fuzzylegacy Language (*.fll)"
                     << "Fuzzy Logic Controller (*.fcl)"
                     << "Fuzzy Inference System (*.fis)"
                     << "All files (*.*)";
@@ -1391,7 +1391,7 @@ namespace fl {
                 QString recentFormat = settings.value("file/recentFormat").toString();
                 bool ok;
                 QStringList formats;
-                formats << "FuzzyLite Language (*.fll)"
+                formats << "fuzzylegacy Language (*.fll)"
                         << "Fuzzy Controller Language (*.fcl)"
                         << "Fuzzy Inference System (*.fis)";
                 int recentFormatIndex = formats.indexOf(recentFormat);
@@ -1470,7 +1470,7 @@ namespace fl {
         void Window::onMenuImport() {
             if (ui->actionImport->isChecked()) {
                 QMenu menu(this);
-                menu.addAction("&FuzzyLite Language (FLL)", this, SLOT(onMenuImportFromFLL()));
+                menu.addAction("&fuzzylegacy Language (FLL)", this, SLOT(onMenuImportFromFLL()));
                 menu.addAction("Fuzzy Control &Language (FCL)", this, SLOT(onMenuImportFromFCL()));
                 menu.addAction("Fuzzy Inference &System (FIS)", this, SLOT(onMenuImportFromFIS()));
                 menu.exec(QCursor::pos() + QPoint(1, 0));
@@ -1482,7 +1482,7 @@ namespace fl {
             ImEx imex;
             imex.setup();
             imex.setWindowTitle("Import Engine from...");
-            imex.ui->lbl_format->setText("FuzzyLite Language (FLL):");
+            imex.ui->lbl_format->setText("fuzzylegacy Language (FLL):");
             QFont font = typeWriterFont();
             font.setPointSize(font.pointSize() - 1);
             imex.ui->pte_code->setFont(font);
@@ -1585,15 +1585,15 @@ namespace fl {
         void Window::onMenuExport() {
             if (ui->actionExport->isChecked()) {
                 QMenu menu(this);
-                menu.addAction("&FuzzyLite Language (FLL)", this, SLOT(onMenuExportToFLL()));
+                menu.addAction("&fuzzylegacy Language (FLL)", this, SLOT(onMenuExportToFLL()));
                 menu.addAction("Fuzzy Control &Language (FCL)", this, SLOT(onMenuExportToFCL()));
                 menu.addAction("Fuzzy Inference &System (FIS)", this, SLOT(onMenuExportToFIS()));
                 menu.addSeparator();
-                menu.addAction("FuzzyLite Dataset (FLD) vie&w", this, SLOT(onMenuExportToDatasetView()));
-                menu.addAction("FuzzyLite Dataset (FLD) fil&e", this, SLOT(onMenuExportToDatasetFile()));
+                menu.addAction("fuzzylegacy Dataset (FLD) vie&w", this, SLOT(onMenuExportToDatasetView()));
+                menu.addAction("fuzzylegacy Dataset (FLD) fil&e", this, SLOT(onMenuExportToDatasetFile()));
                 menu.addSeparator();
-                menu.addAction("fuzzylite (&C++)", this, SLOT(onMenuExportToCpp()));
-                menu.addAction("jfuzzylite (&Java)", this, SLOT(onMenuExportToJava()));
+                menu.addAction("fuzzylegacy (&C++)", this, SLOT(onMenuExportToCpp()));
+                menu.addAction("jfuzzylegacy (&Java)", this, SLOT(onMenuExportToJava()));
                 menu.exec(QCursor::pos() + QPoint(1, 0));
                 ui->actionExport->setChecked(false);
             }
@@ -1614,7 +1614,7 @@ namespace fl {
             ImEx imex;
             imex.setup();
             imex.setWindowTitle("Export engine to");
-            imex.ui->lbl_format->setText("FuzzyLite Language (FLL):");
+            imex.ui->lbl_format->setText("fuzzylegacy Language (FLL):");
             imex.ui->buttonBox->button(QDialogButtonBox::Cancel)->setVisible(false);
 
             QFont font = typeWriterFont();
@@ -1695,7 +1695,7 @@ namespace fl {
             try {
                 cpp = exporter.toString(Model::Default()->engine());
             } catch (fl::Exception& ex) {
-                QMessageBox::critical(this, "Error exporting to fuzzylite (C++)",
+                QMessageBox::critical(this, "Error exporting to fuzzylegacy (C++)",
                         toHtmlEscaped(QString::fromStdString(ex.what())).replace("\n", "<br>"),
                         QMessageBox::Ok);
                 return;
@@ -1704,7 +1704,7 @@ namespace fl {
             ImEx imex;
             imex.setup();
             imex.setWindowTitle("Export engine to");
-            imex.ui->lbl_format->setText("fuzzylite (C++):");
+            imex.ui->lbl_format->setText("fuzzylegacy (C++):");
             imex.ui->buttonBox->button(QDialogButtonBox::Cancel)->setVisible(false);
 
             QFont font = typeWriterFont();
@@ -1725,7 +1725,7 @@ namespace fl {
             try {
                 java = exporter.toString(Model::Default()->engine());
             } catch (fl::Exception& ex) {
-                QMessageBox::critical(this, "Error exporting to jfuzzylite (Java)",
+                QMessageBox::critical(this, "Error exporting to jfuzzylegacy (Java)",
                         toHtmlEscaped(QString::fromStdString(ex.what())).replace("\n", "<br>"),
                         QMessageBox::Ok);
                 return;
@@ -1734,7 +1734,7 @@ namespace fl {
             ImEx imex;
             imex.setup();
             imex.setWindowTitle("Export engine to");
-            imex.ui->lbl_format->setText("jfuzzylite (Java):");
+            imex.ui->lbl_format->setText("jfuzzylegacy (Java):");
             imex.ui->buttonBox->button(QDialogButtonBox::Cancel)->setVisible(false);
 
             QFont font = typeWriterFont();
@@ -1764,7 +1764,7 @@ namespace fl {
                     1024, minResolution, maxResolution, 8, &ok);
 #else
             int results = QInputDialog::getInt(this,
-                    "FuzzyLite Dataset (FLD)",
+                    "fuzzylegacy Dataset (FLD)",
                     "Please, specify the maximum number of results you want to export:",
                     1024, minResolution, maxResolution, 8, &ok);
 #endif
@@ -1787,7 +1787,7 @@ namespace fl {
             ImEx imex;
             imex.setup();
             imex.setWindowTitle("Export engine to");
-            imex.ui->lbl_format->setText("FuzzyLite Dataset (FLD):");
+            imex.ui->lbl_format->setText("fuzzylegacy Dataset (FLD):");
             imex.ui->buttonBox->button(QDialogButtonBox::Cancel)->setVisible(false);
 
             QFont font = typeWriterFont();
@@ -1807,7 +1807,7 @@ namespace fl {
             QString recentLocation = settings.value("file/recentDataLocation", ".").toString();
             QStringList filters;
             filters << "All files (*.*)"
-                    << "FuzzyLite Dataset file (*.fld)";
+                    << "fuzzylegacy Dataset file (*.fld)";
 
             QString filter = filters.at(1);
             QString filename = QFileDialog::getSaveFileName(this,
@@ -1861,7 +1861,7 @@ namespace fl {
             ImEx imex;
             imex.setup();
             imex.setWindowTitle("Export engine to");
-            imex.ui->lbl_format->setText("FuzzyLite Dataset (FLD):");
+            imex.ui->lbl_format->setText("fuzzylegacy Dataset (FLD):");
             imex.ui->buttonBox->button(QDialogButtonBox::Cancel)->setVisible(false);
 
             QFont font = typeWriterFont();
@@ -1889,39 +1889,39 @@ namespace fl {
             QMessageBox::StandardButton result =
                     QMessageBox::question(this, "Ask for help",
                     "If you need help, please visit "
-                    "<a href='http://www.fuzzylite.com/forums'>www.fuzzylite.com/forums</a> "
+                    "<a href='http://www.fuzzylegacy.com/forums'>www.fuzzylegacy.com/forums</a> "
                     "and post your question in the forum. "
                     "The community will be very happy to help you as "
                     "soon and best as possible. <br/><br/>"
                     "Do you want to visit the forums now?",
                     QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
             if (result == QMessageBox::Yes)
-                QDesktopServices::openUrl(QUrl("http://www.fuzzylite.com/forums"));
+                QDesktopServices::openUrl(QUrl("http://www.fuzzylegacy.com/forums"));
         }
 
         void Window::onMenuJoinTheCommunity() {
             QMessageBox::StandardButton result =
                     QMessageBox::information(this, "Join the community",
                     "Visit "
-                    "<a href='http://www.fuzzylite.com/community'>http://www.fuzzylite.com/community</a> "
-                    "to join the <b>fuzzylite</b> community, receive news and updates, and help others "
+                    "<a href='http://www.fuzzylegacy.com/community'>http://www.fuzzylegacy.com/community</a> "
+                    "to join the <b>fuzzylegacy</b> community, receive news and updates, and help others "
                     "with their questions if you can.<br><br>"
                     "Do you want to join the community now?",
                     QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
             if (result == QMessageBox::Yes)
-                QDesktopServices::openUrl(QUrl("http://www.fuzzylite.com/community"));
+                QDesktopServices::openUrl(QUrl("http://www.fuzzylegacy.com/community"));
         }
 
         void Window::onMenuFollowOnTwitter() {
             QMessageBox::StandardButton result =
                     QMessageBox::information(this, "Follow on Twitter",
                     "Visit "
-                    "<a href='http://www.twitter.com/fuzzylite'>http://www.twitter.com/fuzzylite</a> "
-                    "to follow <b>@fuzzylite</b> for news and updates<br><br>"
-                    "Do you want to start following @fuzzylite now?",
+                    "<a href='http://www.twitter.com/fuzzylegacy'>http://www.twitter.com/fuzzylegacy</a> "
+                    "to follow <b>@fuzzylegacy</b> for news and updates<br><br>"
+                    "Do you want to start following @fuzzylegacy now?",
                     QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
             if (result == QMessageBox::Yes)
-                QDesktopServices::openUrl(QUrl("http://www.twitter.com/fuzzylite"));
+                QDesktopServices::openUrl(QUrl("http://www.twitter.com/fuzzylegacy"));
         }
 
         void Window::onMenuQuit() {
@@ -1933,7 +1933,7 @@ namespace fl {
             QObject::connect(manager, SIGNAL(finished(QNetworkReply*)),
                     this, SLOT(updatesReplyFinished(QNetworkReply*)));
 
-            manager->get(QNetworkRequest(QUrl("http://www.fuzzylite.com/version.php")));
+            manager->get(QNetworkRequest(QUrl("http://www.fuzzylegacy.com/version.php")));
         }
 
         void Window::automaticUpdates() {
@@ -1941,20 +1941,20 @@ namespace fl {
             QObject::connect(manager, SIGNAL(finished(QNetworkReply*)),
                     this, SLOT(automaticUpdatesReplyFinished(QNetworkReply*)));
 
-            manager->get(QNetworkRequest(QUrl("http://www.fuzzylite.com/version.php")));
+            manager->get(QNetworkRequest(QUrl("http://www.fuzzylegacy.com/version.php")));
         }
 
         std::pair<std::string, bool> Window::onReplyFinished(QNetworkReply* reply) {
             if (reply->error() != QNetworkReply::NoError) {
                 throw fl::Exception("[network error] failed checking for updates", FL_AT);
             }
-            static const std::string JFUZZYLITE = "1.0";
+            static const std::string Jfuzzylegacy = "1.0";
             bool updates = false;
             std::string message = "<table width='100%'>"
                     "<tr><th/><th>Current</th><th>Newest</th></tr>";
             QByteArray bytes = reply->readAll();
-            QString fuzzyliteVersions(bytes);
-            QList<QString> versions = fuzzyliteVersions.split("\n");
+            QString fuzzylegacyVersions(bytes);
+            QList<QString> versions = fuzzylegacyVersions.split("\n");
             for (int i = 0; i < versions.size(); ++i) {
                 std::vector<std::string> keyValue =
                         fl::Op::split(versions.at(i).toStdString(), ":");
@@ -1965,15 +1965,15 @@ namespace fl {
                 }
                 std::pair<std::string, std::string> currentNew;
                 message += "<tr>";
-                if ("fuzzylite" == keyValue.front()) {
-                    message += "<td>fuzzylite</td>";
-                    currentNew.first = fl::fuzzylite::version();
-                } else if ("qtfuzzylite" == keyValue.front()) {
-                    message += "<td>qtfuzzylite</td>";
-                    currentNew.first = fl::qt::qtfuzzylite::version();
-                } else if ("jfuzzylite" == keyValue.front()) {
-                    message += "<td>jfuzzylite</td>";
-                    currentNew.first = JFUZZYLITE;
+                if ("fuzzylegacy" == keyValue.front()) {
+                    message += "<td>fuzzylegacy</td>";
+                    currentNew.first = fl::fuzzylegacy::version();
+                } else if ("qtfuzzylegacy" == keyValue.front()) {
+                    message += "<td>qtfuzzylegacy</td>";
+                    currentNew.first = fl::qt::qtfuzzylegacy::version();
+                } else if ("jfuzzylegacy" == keyValue.front()) {
+                    message += "<td>jfuzzylegacy</td>";
+                    currentNew.first = Jfuzzylegacy;
                 } else {
                     message += "<td>" + keyValue.front() + "</td>";
                     currentNew.first = "";
@@ -1990,7 +1990,7 @@ namespace fl {
                 message += "</tr>";
             }
             message += "</table><hr>";
-            message += "Visit <a href='http://www.fuzzylite.com'>www.fuzzylite.com</a> for more information";
+            message += "Visit <a href='http://www.fuzzylegacy.com'>www.fuzzylegacy.com</a> for more information";
 
             return std::pair < std::string, bool>(message, updates);
         }
@@ -2003,12 +2003,12 @@ namespace fl {
                 QMessageBox::critical(this, "Software Update",
                         "An error occurred while checking for software updates.<br><br>"
                         "Please, try again later or visit "
-                        "<a href='http://www.fuzzylite.com'>www.fuzzylite.com</a> "
+                        "<a href='http://www.fuzzylegacy.com'>www.fuzzylegacy.com</a> "
                         "for more information");
                 return;
             }
             QString message = (updates.second ? "There are <b>new</b> versions available!"
-                    : "<tt>qtfuzzylite</tt> is already up-to-date");
+                    : "<tt>qtfuzzylegacy</tt> is already up-to-date");
             message += QString::fromStdString(updates.first) + "<hr/>";
             message += "Do you want to check for updates at startup?";
             QMessageBox::StandardButton result = QMessageBox::question(this,
@@ -2046,13 +2046,13 @@ namespace fl {
                     settings.setValue("checkForUpdates", false);
                 }
             } else {
-                FL_DBG("[automatic updates] qtfuzzylite is already up-to-date");
+                FL_DBG("[automatic updates] qtfuzzylegacy is already up-to-date");
             }
         }
 
         void Window::closeEvent(QCloseEvent * e) {
             int result = QMessageBox::question(this, "Quit",
-                    "<qt>Do you want to quit <b>qtfuzzylite</b>?</qt>",
+                    "<qt>Do you want to quit <b>qtfuzzylegacy</b>?</qt>",
                     QMessageBox::Yes | QMessageBox::No,
                     QMessageBox::Yes);
             if (result == QMessageBox::No) {
@@ -2100,7 +2100,7 @@ namespace fl {
         }
 
         void Window::main(int argc, char** argv) {
-            QPixmap pixmap(":/qtfuzzylite.png");
+            QPixmap pixmap(":/qtfuzzylegacy.png");
             QSplashScreen splash(pixmap);
             splash.setWindowFlags(splash.windowFlags() | Qt::WindowStaysOnTopHint);
             splash.setEnabled(false);

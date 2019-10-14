@@ -22,7 +22,7 @@
 #ifndef FL_TSUKAMOTO_H
 #define	FL_TSUKAMOTO_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 namespace fl {
     class Thresholded;

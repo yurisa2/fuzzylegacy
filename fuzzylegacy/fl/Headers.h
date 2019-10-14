@@ -23,7 +23,7 @@
 #ifndef FL_HEADERS_H
 #define FL_HEADERS_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include "fl/Console.h"
 #include "fl/Engine.h"

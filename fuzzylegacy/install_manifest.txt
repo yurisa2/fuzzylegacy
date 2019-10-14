@@ -1,6 +1,6 @@
-/usr/local/bin/fuzzylite
-/usr/local/bin/libfuzzylite.so
-/usr/local/bin/libfuzzylite-static.a
+/usr/local/bin/fuzzylegacy
+/usr/local/bin/libfuzzylegacy.so
+/usr/local/bin/libfuzzylegacy-static.a
 /usr/local/include/fl/variable/OutputVariable.h
 /usr/local/include/fl/variable/InputVariable.h
 /usr/local/include/fl/variable/Variable.h
@@ -28,7 +28,7 @@
 /usr/local/include/fl/norm/t/EinsteinProduct.h
 /usr/local/include/fl/norm/SNorm.h
 /usr/local/include/fl/norm/TNorm.h
-/usr/local/include/fl/fuzzylite.h
+/usr/local/include/fl/fuzzylegacy.h
 /usr/local/include/fl/Headers.h
 /usr/local/include/fl/Operation.h
 /usr/local/include/fl/defuzzifier/MeanOfMaximum.h

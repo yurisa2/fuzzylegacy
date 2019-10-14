@@ -23,7 +23,7 @@
 #ifndef FL_FACTORY_H
 #define	FL_FACTORY_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include <map>
 #include <string>

@@ -1,21 +1,21 @@
 /**
-    This file is part of qtfuzzylite.
+    This file is part of qtfuzzylegacy.
 
-    qtfuzzylite is free software: you can redistribute it and/or modify
+    qtfuzzylegacy is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    qtfuzzylite is distributed in the hope that it will be useful,
+    qtfuzzylegacy is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with qtfuzzylite.  If not, see <http://www.gnu.org/licenses/>.
+    along with qtfuzzylegacy.  If not, see <http://www.gnu.org/licenses/>.
 
     Juan Rada-Vilela, 01 February 2013
-    jcrada@fuzzylite.com
+    jcrada@fuzzylegacy.com
  **/
 
 /*
@@ -30,7 +30,7 @@
 #include "fl/qt/Model.h"
 
 #include "fl/qt/Window.h"
-#include "fl/qt/qtfuzzylite.h"
+#include "fl/qt/qtfuzzylegacy.h"
 
 #include <QGraphicsPolygonItem>
 
@@ -63,7 +63,7 @@ namespace fl {
             ui->setupUi(this);
             ui->sbx_x->setSingleStep(fl::Op::max(scalar(0.01),
                     model->getMaximum() - model->getMinimum()) / 100);
-            ui->sbx_x->setDecimals(fuzzylite::decimals());
+            ui->sbx_x->setDecimals(fuzzylegacy::decimals());
 
             ui->btn_name->setText(QString::fromStdString(model->getName()));
             if (constVariable->getName().empty())
@@ -156,7 +156,7 @@ namespace fl {
             ui->sld_x->setCursor(QCursor(Qt::ClosedHandCursor));
 #ifdef FL_EXPORT_SVG
             ui->canvas->viewport()->setFixedSize(128, 128);
-            exportToSvg("/tmp/qtfuzzylite.svg");
+            exportToSvg("/tmp/qtfuzzylegacy.svg");
 #endif
         }
 
@@ -337,7 +337,7 @@ namespace fl {
             svgGen.setFileName(QString::fromStdString(filepath));
             svgGen.setSize(ui->canvas->viewport()->size());
             svgGen.setViewBox(ui->canvas->viewport()->rect());
-            svgGen.setTitle("qtfuzzylite");
+            svgGen.setTitle("qtfuzzylegacy");
             svgGen.setDescription("A fuzzy logic controller graphic user interface written in Qt");
 
             /* To paint background white instead of transparent

@@ -23,7 +23,7 @@
 #ifndef FL_NORM_H
 #define	FL_NORM_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include "fl/Operation.h"
 

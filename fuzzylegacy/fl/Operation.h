@@ -23,7 +23,7 @@
 #ifndef FL_OPERATION_H
 #define	FL_OPERATION_H
 
-#include "fl/fuzzylite.h"
+#include "fl/fuzzylegacy.h"
 
 #include "fl/Exception.h"
 
@@ -49,19 +49,19 @@ namespace fl {
 
         //Is less than
 
-        static bool isLt(scalar a, scalar b, scalar macheps = fuzzylite::macheps());
+        static bool isLt(scalar a, scalar b, scalar macheps = fuzzylegacy::macheps());
 
-        static bool isLE(scalar a, scalar b, scalar macheps = fuzzylite::macheps());
+        static bool isLE(scalar a, scalar b, scalar macheps = fuzzylegacy::macheps());
 
         //Is equal
 
-        static bool isEq(scalar a, scalar b, scalar macheps = fuzzylite::macheps());
+        static bool isEq(scalar a, scalar b, scalar macheps = fuzzylegacy::macheps());
 
         //Is greater than
 
-        static bool isGt(scalar a, scalar b, scalar macheps = fuzzylite::macheps());
+        static bool isGt(scalar a, scalar b, scalar macheps = fuzzylegacy::macheps());
 
-        static bool isGE(scalar a, scalar b, scalar macheps = fuzzylite::macheps());
+        static bool isGE(scalar a, scalar b, scalar macheps = fuzzylegacy::macheps());
 
         static scalar scale(scalar x, scalar fromMin, scalar fromMax,
                 scalar toMin, scalar toMax);
@@ -102,7 +102,7 @@ namespace fl {
                 const std::string& sep = "");
 
         template <typename T>
-        static std::string str(T x, int decimals = fuzzylite::decimals());
+        static std::string str(T x, int decimals = fuzzylegacy::decimals());
 
         template <typename T>
         static std::string join(const std::vector<T>& x,
