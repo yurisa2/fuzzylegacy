@@ -1,0 +1,1 @@
+/usr/bin/c++   -Werror -Wall -Wextra -O3 -DNDEBUG    CMakeFiles/fl-bin.dir/src/Console.cpp.o CMakeFiles/fl-bin.dir/src/main.cpp.o  -o bin/fuzzylite -rdynamic bin/libfuzzylite.so -Wl,-rpath,/home/yurisa2/fuzzylite/fuzzylite/bin: 

@@ -1,0 +1,58 @@
+Version 4.0
+* FuzzyRule merged with Rule, and FuzzyRule deleted.
+* FuzzyAntecedent merged with Antecedent, and FuzzyAntecedent deleted
+* FuzzyConsequent merged with Consequent, and FuzzyConsequent deleted
+* FuzzyExpression renamed Expression
+* Renamed Rule::get/setUnparsedRule to get/setText
+* Renamed RuleBlock::get/set(Tnorm|Snorm) to get/set(Conjunction|Disjunction)
+* Renamed RuleBlock::fireRules to activate
+* Renamed Rule::fireStrength to activationDegree, fire to activate
+* Renamed Consequent::fire to modify
+* Created IntegralDefuzzifier to extract divisions from Defuzzifier
+* Renamed divisions from IntegralDefuzzifier to resolution, FL_DIVISIONS to FL_RESOLUTION
+* Deleted MaximumDefuzzifier
+* Centroid, Bisector, and Largest/Smallest/Mean Defuzzifiers inherit from IntegralDefuzzifier
+* Changed names of arithmetic operations in fl::Operation
+* Renamed Function::get/set(Infix) to get/set(Formula)
+* Renamed InputVariable::get/set(Input) to get/set(InputValue)
+* Renamed Antecedent::firingStrength to activationDegree
+* Renamed Antecedent::toString/(Prefix,Infix,Postfix) to to/(Prefix,Infix,Postfix)
+* Renamed Rule::FL_ASSIGN to Rule::FL_EQUALS
+* New method restart in Engine
+* New methods Engine::setInputValue(name, value), scalar Engine::getOutputValue(name)
+* Renamed Op::str(vector/varargs) to Op::join(vector/varargs)
+* Refactored associtativity, unary and binary properties in Element within Function
+* Removed unnecessary Hedges creation upon importing engines, now is automatic via Factories
+* Created the JavaExporter
+* Renamed methods within Fis/Fcl/CppExporter to toString(*);
+* Extracted TNorms and SNorms from TNorm.h/cpp and SNorm.h/cpp
+* Created proper Factories with registration of classes and constructors
+* Renamed method Factory::create to Factory::createInstance
+* Added static constructor method to every Defuzzifier, Hedge, TNorm, and SNorm
+* Removed FL_PRECISION, FL_DECIMALS as Macros, and created static variables in fuzzylite.h
+* Renamed FL_PRECISION to macheps, i.e., machine epsilon to differentiate real numbers
+* Removed FL_DEBUG and created a static variable in fuzzylite.h
+* Removed FL_NO_LOG as it is now controlled with fuzzylite::logging(), previously named logEnabled()
+* Libraries and Console application are both built in folder bin/ (previously libraries were at lib/)
+* Removed Engine::toStringFis/Fcl/Cpp to encourage use of Fcl/Fis/CppExporters instead
+* Renamed Op::logical_and to Op::logicalAnd, Op::logical_or to Op::logicalOr
+* Added support to Fis/FclImporters to treat comments (%,#,//,/*) in fis and fcl files 
+* Created the Console application instead of previous demo
+* Added Variable::range() to return (maximum - minimum)
+* Removed Variable::isEmpty, use Variable::terms().empty()
+* Removed RuleBlock::isEmpty, use RuleBlock::rules().empty()
+* Created method Op::makeValidId to ensure names are valid
+* Engine, Variable and Term::toString return FllExport::toString
+* Created Term::parameters to return list of parameter values as string separated by spaces
+* Created Term::configure to configure from Term::parameters
+* FclImEx import and export terms using Term::parameters
+* Created the FuzzyLite Language in FllImporter and FllExporter
+* Created the FuzzyLite Dataset FldExporter
+* Added property Enable to Engine, Variable and RuleBlock
+* Extended FCL and FIS to consider Enabled properties
+* Changed Engine::defuzzify() to consider enabled variables
+* Changed Engine::process() to consider enabled rule blocks
+* Changed OutputVariable::output() to OutputVariable::fuzzyOutput() 
+* Renamed Rectangle::minimum/maximum to Rectangle::start/end
+* Renamed fuzzylite::shortVersion to fuzzylite::version
+* Improved accuracy of Triangle and Trapezoid
