@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 
 /* 
  * File:   Linear.h
- * Author: jcrada
+ * Author: @yurisa2
  *
- * Created on 8 May 2013, 3:42 PM
+ * Created on 8 May 2019, 3:42 PM
  */
 
 #ifndef FL_LINEAR_H

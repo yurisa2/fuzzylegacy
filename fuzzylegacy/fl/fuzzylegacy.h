@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 
 /* 
  * File:   fuzzylegacy.h
- * Author: jcrada
+ * Author: @yurisa2
  *
- * Created on 1 February 2013, 10:47 AM
+ * Created on 1 February 2019, 10:47 AM
  */
 
 #ifndef FL_fuzzylegacy_H

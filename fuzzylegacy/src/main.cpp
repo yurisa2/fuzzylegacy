@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
  * main.cpp
  *
  *  Created on: 2/12/2012
- *      Author: jcrada
+ *      Author: @yurisa2
  */
 
 #include "fl/Headers.h"
@@ -82,8 +82,8 @@ void exportAllExamples(const std::string& from, const std::string& to) {
     examples.push_back("/takagi-sugeno/octave/sugeno_tip_calculator");
     examples.push_back("/tsukamoto/tsukamoto");
 
-    std::string sourceBase = "/home/jcrada/Development/fl/fuzzylegacy/examples";
-    //    std::string targetBase = "/home/jcrada/Development/fuzzylegacy/examples/" + to;
+    std::string sourceBase = "/home/yurisa2/Development/fl/fuzzylegacy/examples";
+    //    std::string targetBase = "/home/yurisa2/Development/fuzzylegacy/examples/" + to;
     std::string targetBase = "/tmp/fl/";
 
     Importer* importer;

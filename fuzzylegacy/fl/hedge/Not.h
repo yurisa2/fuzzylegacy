@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
  * Not.h
  *
  *  Created on: 4/12/2012
- *      Author: jcrada
+ *      Author: @yurisa2
  */
 
 #ifndef FL_NOT_H

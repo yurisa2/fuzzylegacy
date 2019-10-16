@@ -14,15 +14,15 @@
     You should have received a copy of the GNU General Public License
     along with qtfuzzylegacy.  If not, see <http://www.gnu.org/licenses/>.
 
-    Juan Rada-Vilela, 01 February 2013
-    jcrada@fuzzylegacy.com
+    Yuri Sa @yurisa2, 20 October 2019
+    yuri@sa2.com.br
  **/
 
 /*
  * InputVariable.cpp
  *
  *  Created on: 11/12/2012
- *      Author: jcrada
+ *      Author: @yurisa2
  */
 
 #include "fl/qt/Variable.h"

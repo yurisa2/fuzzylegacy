@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 
 /* 
  * File:   PiShape.h
- * Author: jcrada
+ * Author: @yurisa2
  *
  * Created on 22 December 2012, 5:15 PM
  */

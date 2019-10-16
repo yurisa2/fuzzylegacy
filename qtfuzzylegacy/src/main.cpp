@@ -14,15 +14,15 @@
     You should have received a copy of the GNU General Public License
     along with qtfuzzylegacy.  If not, see <http://www.gnu.org/licenses/>.
 
-    Juan Rada-Vilela, 01 February 2013
-    jcrada@fuzzylegacy.com 
+    Yuri Sa - @yurisa2, 01 February 2013
+    yuri@sa2.com.br 
  **/
 
 /*
  * main.cpp
  *
  *  Created on: 10/12/2012
- *      Author: jcrada 
+ *      Author: @yurisa2 
  */
 
 #include <QApplication> 

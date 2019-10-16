@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 
 /* 
  * File:   SmallestOfMaximum.h
- * Author: jcrada
+ * Author: @yurisa2
  *
- * Created on 8 May 2013, 6:38 PM
+ * Created on 8 May 2019, 6:38 PM
  */
 
 #ifndef FL_SMALLESTOFMAXIMUM_H

@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 
 /* 
  * File:   TNormFactory.cpp
- * Author: jcrada
+ * Author: @yurisa2
  * 
- * Created on 8 January 2013) return  11:20 PM
+ * Created on 8 January 2019) return  11:20 PM
  */
 
 #include "fl/factory/TNormFactory.h"

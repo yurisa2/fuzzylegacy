@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 
 /* 
  * File:   JavaExporter.h
- * Author: jcrada
+ * Author: @yurisa2
  *
- * Created on 28 November 2013, 10:20 PM
+ * Created on 28 November 2019, 10:20 PM
  */
 
 #ifndef FL_JAVAEXPORTER_H

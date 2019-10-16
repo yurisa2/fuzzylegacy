@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 # In Linux:
 # In Mac:
 # otool -L qtfuzzylegacy #gives the dependencies of qtfuzzylegacy
-# install_name_tool -change /Users/jcrada/Development/fl/fuzzylegacy/fuzzylegacy/bin/libfuzzylegacy.dylib @executable_path/../Frameworks/libfuzzylegacy.dylib qtfuzzylegacy.app/Contents/MacOS/qtfuzzylegacy
+# install_name_tool -change /Users/yurisa2/Development/fl/fuzzylegacy/fuzzylegacy/bin/libfuzzylegacy.dylib @executable_path/../Frameworks/libfuzzylegacy.dylib qtfuzzylegacy.app/Contents/MacOS/qtfuzzylegacy
 
 project(qtfuzzylegacy CXX)
 
@@ -171,14 +171,14 @@ endif()
 
 if(APPLE)
     set_target_properties(qtfuzzylegacy PROPERTIES
-    MACOSX_BUNDLE_INFO_STRING "${FLQT_FULLNAME} by Juan Rada-Vilela, licensed under the GNU GPL 3.0"
+    MACOSX_BUNDLE_INFO_STRING "${FLQT_FULLNAME} by Yuri Sa @yurisa2, licensed under the GNU GPL 3.0"
     MACOSX_BUNDLE_ICON_FILE qtfuzzylegacy.icns
     MACOSX_BUNDLE_GUI_IDENTIFIER "${PROJECT_NAME}"
     MACOSX_BUNDLE_BUNDLE_NAME "${PROJECT_NAME}"
     MACOSX_BUNDLE_BUNDLE_VERSION "${FLQT_DATE}"
     MACOSX_BUNDLE_LONG_VERSION_STRING "${FLQT_LONG_VERSION}"
     MACOSX_BUNDLE_SHORT_VERSION_STRING "${FLQT_VERSION}"
-    MACOSX_BUNDLE_COPYRIGHT "Juan Rada-Vilela, Licensed under the GNU General Public License 3.0"
+    MACOSX_BUNDLE_COPYRIGHT "Yuri Sa @yurisa2, Licensed under the GNU General Public License 3.0"
 )
     add_custom_target(  mac-deploy ALL
                         COMMAND ${QT_BINARY_DIR}/macdeployqt qtfuzzylegacy.app

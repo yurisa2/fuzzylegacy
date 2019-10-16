@@ -1,8 +1,8 @@
 /* 
  * File:   Console.h
- * Author: jcrada
+ * Author: @yurisa2
  *
- * Created on 30 November 2013, 10:54 AM
+ * Created on 30 November 2019, 10:54 AM
  */
 
 #ifndef FL_CONSOLE_H

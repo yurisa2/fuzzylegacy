@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 2.8)
 # In Linux:
 # In Mac:
 # otool -L fuzzylegacy #gives the dependencies of fuzzylegacy
-# install_name_tool -change /Users/jcrada/Development/fuzzylegacy/bin/libfuzzylegacy.dylib @executable_path/libfuzzylegacy.dylib fuzzylegacy
+# install_name_tool -change /Users/yurisa2/Development/fuzzylegacy/bin/libfuzzylegacy.dylib @executable_path/libfuzzylegacy.dylib fuzzylegacy
 
 project(fuzzylegacy CXX)
 

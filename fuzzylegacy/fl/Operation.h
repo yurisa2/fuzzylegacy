@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 
 /* 
  * File:   Operation.h
- * Author: jcrada
+ * Author: @yurisa2
  *
- * Created on 1 February 2013, 6:10 PM
+ * Created on 1 February 2019, 6:10 PM
  */
 
 #ifndef FL_OPERATION_H

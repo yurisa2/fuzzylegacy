@@ -14,15 +14,15 @@
     You should have received a copy of the GNU General Public License
     along with qtfuzzylegacy.  If not, see <http://www.gnu.org/licenses/>.
 
-    Juan Rada-Vilela, 21 July 2013
-    jcrada@fuzzylegacy.com
+    Yuri Sa @yurisa2, 21 July 2019
+    yuri@sa2.com.br
 **/
 
 /* 
  * File:   ImEx.h
- * Author: jcrada
+ * Author: @yurisa2
  *
- * Created on 6 July 2013, 9:06 PM
+ * Created on 6 July 2019, 9:06 PM
  */
 
 #ifndef FL_QT_IMEX_H

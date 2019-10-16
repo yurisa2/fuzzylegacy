@@ -33,7 +33,7 @@
       <enum>QFrame::Raised</enum>
      </property>
      <property name="text">
-      <string>fuzzylegacy is a fork of the venerable fuzzylite</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;fuzzylegacy is a fork of the venerable fuzzylite&lt;/p&gt;&lt;p&gt;Born in Linux. Opensource OBVIOUSLY&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;img src=&quot;:/icons/yuri-sa.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;Maintained by @yurisa2&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;About Me&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://about.me/yuri.sa&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yurisa2&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;My Repos&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yurisa2/fuzzylegacy&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;FuzzyLegacy @github&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="scaledContents">
       <bool>true</bool>

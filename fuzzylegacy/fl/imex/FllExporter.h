@@ -1,4 +1,4 @@
-/*   Copyright 2013 Juan Rada-Vilela
+/*   Copyright 2019 Yuri Sa @yurisa2
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 
 /* 
  * File:   FllExporter.h
- * Author: jcrada
+ * Author: @yurisa2
  *
- * Created on 18 December 2013, 8:53 AM
+ * Created on 18 December 2019, 8:53 AM
  */
 
 #ifndef FL_FLLEXPORTER_H

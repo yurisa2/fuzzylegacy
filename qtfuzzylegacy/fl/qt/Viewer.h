@@ -14,13 +14,13 @@
     You should have received a copy of the GNU General Public License
     along with qtfuzzylegacy.  If not, see <http://www.gnu.org/licenses/>.
 
-    Juan Rada-Vilela, 01 February 2013
-    jcrada@fuzzylegacy.com
+    Yuri Sa @yurisa2, 20 October 2019
+    yuri@sa2.com.br
  **/
 
 /* 
  * File:   Viewer.h
- * Author: jcrada
+ * Author: @yurisa2
  *
  * Created on 23 December 2012, 11:13 AM
  */
