@@ -1,7 +1,0 @@
-/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/install/strip.dir
-/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/edit_cache.dir
-/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/qtfuzzylegacy.dir
-/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/rebuild_cache.dir
-/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/list_install_components.dir
-/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/install/local.dir
-/home/yurisa2/lampstack-5.6.22-0/apache2/htdocs/fuzzylegacy/qtfuzzylegacy/CMakeFiles/install.dir
