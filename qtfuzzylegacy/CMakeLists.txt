@@ -14,7 +14,7 @@ set(CMAKE_VERBOSE_MAKEFILE true)
 if(WIN32)
     message("Windows")
     add_definitions(-DFL_WINDOWS)
-	set(CMAKE_CXX_FLAGS " /WX /EHsc -std=c++98")
+	set(CMAKE_CXX_FLAGS " /WX /EHsc -std=c++98 --static")
 	#set(CMAKE_CXX_FLAGS " /EHsc")
 endif()
 
