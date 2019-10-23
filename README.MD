@@ -59,14 +59,14 @@ This work is a fork of the venerable fuzzylite, but as the opensource goes...wel
 #### Reference
 If you are using the FuzzyLegacy Libraries, please cite the following reference in your article:
 
-Yuri Sa. fuzzylegacy: a fuzzy logic control library, 20179 URL https://github.com/yurisa2/fuzzylegacy.
+Yuri Sa. fuzzylegacy: a fuzzy logic control library, 2019 URL https://github.com/yurisa2/fuzzylegacy.
 
 ```bibtex
  @misc{fl::fuzzylegacy,
  author={Yuri Sa},
  title={fuzzylegacy: a fuzzy logic control library},
  url={https://github.com/yurisa2/fuzzylegacy},
- year={2017}}
+ year={2019}}
 ```
 
 #### Documentation
