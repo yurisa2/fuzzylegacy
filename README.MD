@@ -17,7 +17,7 @@ Windows:
 Linux:
 [Lib](https://github.com/yurisa2/fuzzylegacy/blob/master/Binaries/Linux/libfuzzylegacy.so)
 [Executable](https://github.com/yurisa2/fuzzylegacy/blob/master/Binaries/Linux/qtfuzzylegacy)
-In the linux release you will need the qt4 libs (debian: **apt-get install qt4-standard**) but you really want to do it by hand you can download it [here](https://download.qt.io/archive/qt/4.8/4.8.7/)
+In the linux release you will need the qt4 libs (debian: **apt-get install qt4-default**) but you really want to do it by hand you can download it [here](https://download.qt.io/archive/qt/4.8/4.8.7/)
 
 Here are some screenshots...
 ![Main Window](https://raw.githubusercontent.com/yurisa2/fuzzylegacy/master/Binaries/Windows/open.PNG)
