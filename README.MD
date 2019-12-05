@@ -8,6 +8,12 @@ A Fuzzy Logic Control Lib and Frontend in C++
 
 By: [Yuri Sa](https://about.me/yuri.sa).
 
+https://zenodo.org/record/3551261#.XektHK97lHg
+
+DOI: 10.5281/zenodo.3551261
+
+
+
 Released: 2019-10-22
 
 We have package releases of qtfuzzylegacy (GUI for FISs creation) ready for deployment:
